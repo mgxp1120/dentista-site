@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OralVitta Odontologia | Cuidado, Tecnologia e Confiança</title>
+    <meta name="description" content="Clínica odontológica com atendimento personalizado, tecnologia moderna e tratamentos para cuidar da saúde e estética do seu sorriso.">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.oralvitta.com.br/">
+    <meta property="og:title" content="OralVitta Odontologia | Cuidado, Tecnologia e Confiança">
+    <meta property="og:description" content="Clínica odontológica com atendimento personalizado, tecnologia moderna e tratamentos para cuidar da saúde e estética do seu sorriso.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=1200">
+
+    <!-- Fonts: Inter & DM Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS v3 CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fff7ed',
+                            100: '#ffedd5',
+                            500: '#f97316',
+                            600: '#ea580c',
+                            700: '#c2410c',
+                        },
+                        neutral: {
+                            50: '#fafafa',
+                            100: '#f5f5f5',
+                            200: '#e5e5e5',
+                            800: '#262626',
+                            900: '#171717',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['DM Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "OralVitta Odontologia",
+      "image": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=1200",
+      "telephone": "+55-11-99999-9999",
+      "email": "contato@oralvitta.com.br",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Exemplo, 1000",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "postalCode": "01000-000",
+        "addressCountry": "BR"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "12:00"
+        }
+      ],
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto !important; }
+            .animate-reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+        }
+        .animate-reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .animate-reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-white text-neutral-800 font-sans antialiased selection:bg-brand-500 selection:text-white flex flex-col min-h-screen">
+
+    <!-- Topbar Desenvolvedor -->
+    <div class="bg-neutral-900 text-neutral-400 text-xs py-1.5 text-center border-b border-neutral-800 z-50 relative">
+        <span class="opacity-80">Desenvolvimento de Demonstração — </span>
+        <strong class="text-neutral-200 font-medium">Desenvolvido por Miguel Alves</strong>
+    </div>
+
+    <!-- Header Sticky -->
+    <header id="header" class="sticky top-0 z-40 bg-white/90 backdrop-blur-md transition-all duration-300 border-b border-neutral-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Logo -->
+            <a href="#inicio" class="flex items-center gap-2.5 group focus:outline-none focus:ring-2 focus:ring-brand-500 rounded-lg p-1">
+                <div class="w-10 h-10 rounded-xl bg-brand-500 text-white flex items-center justify-center shadow-md shadow-brand-500/20 group-hover:bg-brand-600 transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-heading font-bold text-xl leading-none text-neutral-900 tracking-tight">OralVitta</span>
+                    <span class="text-[10px] font-semibold uppercase tracking-widest text-brand-600 leading-tight">Odontologia</span>
+                </div>
+            </a>
+
+            <!-- Nav Desktop -->
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="#inicio" class="text-sm font-medium text-neutral-600 hover:text-brand-600 transition-colors">Início</a>
+                <a href="#tratamentos" class="text-sm font-medium text-neutral-600 hover:text-brand-600 transition-colors">Tratamentos</a>
+                <a href="#sobre" class="text-sm font-medium text-neutral-600 hover:text-brand-600 transition-colors">Sobre nós</a>
+                <a href="#resultados" class="text-sm font-medium text-neutral-600 hover:text-brand-600 transition-colors">Resultados</a>
+                <a href="#depoimentos" class="text-sm font-medium text-neutral-600 hover:text-brand-600 transition-colors">Depoimentos</a>
+                <a href="#clinica" class="text-sm font-medium text-neutral-600 hover:text-brand-600 transition-colors">Clínica</a>
+                <a href="#contato" class="text-sm font-medium text-neutral-600 hover:text-brand-600 transition-colors">Contato</a>
+            </nav>
+
+            <!-- CTA Header -->
+            <div class="hidden md:flex items-center">
+                <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20odontol%C3%B3gica." 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="bg-brand-500 hover:bg-brand-600 text-white font-medium text-sm px-5 py-2.5 rounded-full shadow-lg shadow-brand-500/20 hover:shadow-brand-500/30 transition-all transform hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2">
+                    Agendar avaliação
+                </a>
+            </div>
+
+            <!-- Botão Menu Mobile -->
+            <button id="mobile-menu-btn" 
+                    aria-label="Abrir Menu de Navegação" 
+                    aria-expanded="false" 
+                    class="md:hidden text-neutral-700 hover:text-brand-600 p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-500">
+                <svg id="menu-icon-open" class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+                <svg id="menu-icon-close" class="w-7 h-7 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Menu Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-neutral-100 px-4 pt-2 pb-6 space-y-3">
+            <a href="#inicio" class="mobile-link block py-2 text-base font-medium text-neutral-700 hover:text-brand-600">Início</a>
+            <a href="#tratamentos" class="mobile-link block py-2 text-base font-medium text-neutral-700 hover:text-brand-600">Tratamentos</a>
+            <a href="#sobre" class="mobile-link block py-2 text-base font-medium text-neutral-700 hover:text-brand-600">Sobre nós</a>
+            <a href="#resultados" class="mobile-link block py-2 text-base font-medium text-neutral-700 hover:text-brand-600">Resultados</a>
+            <a href="#depoimentos" class="mobile-link block py-2 text-base font-medium text-neutral-700 hover:text-brand-600">Depoimentos</a>
+            <a href="#clinica" class="mobile-link block py-2 text-base font-medium text-neutral-700 hover:text-brand-600">Clínica</a>
+            <a href="#contato" class="mobile-link block py-2 text-base font-medium text-neutral-700 hover:text-brand-600">Contato</a>
+            <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20odontol%C3%B3gica." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="block text-center w-full bg-brand-500 hover:bg-brand-600 text-white font-medium py-3 rounded-xl shadow-md mt-4">
+                Agendar avaliação
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        
+        <!-- Hero Section -->
+        <section id="inicio" class="relative pt-12 pb-20 lg:pt-20 lg:pb-28 overflow-hidden bg-gradient-to-b from-neutral-50/50 to-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                    
+                    <!-- Lado Esquerdo Conteúdo -->
+                    <div class="lg:col-span-7 space-y-6 animate-reveal">
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 border border-brand-100 text-brand-700 text-xs font-semibold tracking-wide uppercase">
+                            <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
+                            Odontologia moderna e humanizada
+                        </div>
+
+                        <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold text-neutral-900 tracking-tight leading-[1.15]">
+                            Seu sorriso merece <span class="text-brand-600">cuidado</span>, tecnologia e confiança.
+                        </h1>
+
+                        <p class="text-lg text-neutral-600 max-w-2xl leading-relaxed">
+                            Tratamentos odontológicos integrados, personalizados e totalmente centrados no seu bem-estar. Planejamento digital avançado para uma experiência segura e sem dor.
+                        </p>
+
+                        <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                            <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20odontol%C3%B3gica." 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="inline-flex items-center justify-center bg-brand-500 hover:bg-brand-600 text-white font-semibold px-7 py-4 rounded-2xl shadow-xl shadow-brand-500/25 hover:shadow-brand-500/40 transition-all transform hover:-translate-y-0.5 active:translate-y-0 text-center">
+                                Agendar avaliação
+                            </a>
+                            <a href="#tratamentos" 
+                               class="inline-flex items-center justify-center bg-neutral-100 hover:bg-neutral-200 text-neutral-800 font-semibold px-7 py-4 rounded-2xl transition-colors text-center">
+                                Conhecer tratamentos
+                            </a>
+                        </div>
+
+                        <!-- Indicadores de Confiança -->
+                        <div class="pt-6 border-t border-neutral-100 grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm text-neutral-700 font-medium">
+                            <div class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-brand-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                <span>Atendimento personalizado</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-brand-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                <span>Tecnologia odontológica</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-brand-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                <span>Equipe especializada</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lado Direito Imagem -->
+                    <div class="lg:col-span-5 relative animate-reveal">
+                        <div class="relative mx-auto max-w-md lg:max-w-none">
+                            <!-- Background Decorativo -->
+                            <div class="absolute -top-4 -right-4 w-72 h-72 bg-brand-500/10 rounded-full blur-3xl"></div>
+                            
+                            <!-- Imagem Principal -->
+                            <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-neutral-100">
+                                <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=900" 
+                                     alt="Equipe odontológica OralVitta em consultório moderno" 
+                                     width="900" 
+                                     height="1000" 
+                                     class="w-full h-[480px] sm:h-[540px] object-cover object-center">
+                            </div>
+
+                            <!-- Card Flutuante -->
+                            <div class="absolute -bottom-6 -left-6 glass-panel p-4 rounded-2xl shadow-xl border border-white/60 max-w-xs hidden sm:flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-brand-500 text-white flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-bold text-neutral-900">Cuidado que transforma</p>
+                                    <p class="text-[11px] text-neutral-600 font-medium">"Atendimento humanizado e sem dor"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Confiança (Números) -->
+        <section class="py-12 bg-neutral-900 text-white border-y border-neutral-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <p class="text-center text-xs uppercase tracking-widest text-neutral-400 mb-8 font-semibold">Indicadores de desempenho e demonstração</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div class="space-y-1">
+                        <div class="font-heading text-3xl sm:text-4xl font-extrabold text-brand-500">+2.500</div>
+                        <div class="text-xs sm:text-sm text-neutral-400 font-medium">Pacientes atendidos</div>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="font-heading text-3xl sm:text-4xl font-extrabold text-brand-500">+8 anos</div>
+                        <div class="text-xs sm:text-sm text-neutral-400 font-medium">De experiência clínica</div>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="font-heading text-3xl sm:text-4xl font-extrabold text-brand-500">4.9/5</div>
+                        <div class="text-xs sm:text-sm text-neutral-400 font-medium">Avaliação média dos pacientes</div>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="font-heading text-3xl sm:text-4xl font-extrabold text-brand-500">100%</div>
+                        <div class="text-xs sm:text-sm text-neutral-400 font-medium">Atendimento personalizado</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Tratamentos -->
+        <section id="tratamentos" class="py-20 lg:py-28 bg-neutral-50/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16 animate-reveal">
+                    <h2 class="font-heading text-3xl sm:text-4xl font-bold text-neutral-900 tracking-tight">
+                        Tratamentos para cuidar do seu sorriso por completo
+                    </h2>
+                    <p class="text-neutral-600 mt-4 text-base sm:text-lg">
+                        Cada plano de tratamento é elaborado individualmente após uma avaliação clínica minuciosa com foco nas suas metas estéticas e de saúde.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    
+                    <!-- Card 1 -->
+                    <div class="bg-white p-6 rounded-2xl border border-neutral-100 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between group animate-reveal">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-5 group-hover:bg-brand-500 group-hover:text-white transition-colors">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+                            </div>
+                            <h3 class="font-heading text-lg font-bold text-neutral-900 mb-2">Clareamento Dental</h3>
+                            <p class="text-neutral-600 text-sm leading-relaxed mb-4">Técnicas a laser e caseiras supervisionadas para um sorriso nitidamente mais iluminado e harmônico.</p>
+                        </div>
+                        <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20Clareamento%20Dental." target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-brand-600 hover:text-brand-700 inline-flex items-center gap-1">Saiba mais <span class="group-hover:translate-x-1 transition-transform">→</span></a>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-white p-6 rounded-2xl border border-neutral-100 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between group animate-reveal">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-5 group-hover:bg-brand-500 group-hover:text-white transition-colors">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+                            </div>
+                            <h3 class="font-heading text-lg font-bold text-neutral-900 mb-2">Implantes Dentários</h3>
+                            <p class="text-neutral-600 text-sm leading-relaxed mb-4">Soluções definitivas e modernas para recuperação completa da função mastigatória e da estética.</p>
+                        </div>
+                        <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20Implantes%20Dent%C3%A1rios." target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-brand-600 hover:text-brand-700 inline-flex items-center gap-1">Saiba mais <span class="group-hover:translate-x-1 transition-transform">→</span></a>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-white p-6 rounded-2xl border border-neutral-100 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between group animate-reveal">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-5 group-hover:bg-brand-500 group-hover:text-white transition-colors">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                            </div>
+                            <h3 class="font-heading text-lg font-bold text-neutral-900 mb-2">Lentes de Contato</h3>
+                            <p class="text-neutral-600 text-sm leading-relaxed mb-4">Lâminas ultra-finas de porcelana para transformar o formato, cor e alinhamento dos dentes.</p>
+                        </div>
+                        <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20Lentes%20de%20Contato." target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-brand-600 hover:text-brand-700 inline-flex items-center gap-1">Saiba mais <span class="group-hover:translate-x-1 transition-transform">→</span></a>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="bg-white p-6 rounded-2xl border border-neutral-100 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between group animate-reveal">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-5 group-hover:bg-brand-500 group-hover:text-white transition-colors">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                            </div>
+                            <h3 class="font-heading text-lg font-bold text-neutral-900 mb-2">Alinhadores Invisíveis</h3>
+                            <p class="text-neutral-600 text-sm leading-relaxed mb-4">Ortodontia moderna, confortável e praticamente invisível para alinhar seus dentes com discreção.</p>
+                        </div>
+                        <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20Alinhadores%20Invis%C3%ADveis." target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-brand-600 hover:text-brand-700 inline-flex items-center gap-1">Saiba mais <span class="group-hover:translate-x-1 transition-transform">→</span></a>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="bg-white p-6 rounded-2xl border border-neutral-100 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between group animate-reveal">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-5 group-hover:bg-brand-500 group-hover:text-white transition-colors">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                            </div>
+                            <h3 class="font-heading text-lg font-bold text-neutral-900 mb-2">Facetas Dentárias</h3>
+                            <p class="text-neutral-600 text-sm leading-relaxed mb-4">Correções pontuais de anatomia, cor e pequenas imperfeições com alta naturalidade.</p>
+                        </div>
+                        <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20Facetas%20Dent%C3%A1rias." target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-brand-600 hover:text-brand-700 inline-flex items-center gap-1">Saiba mais <span class="group-hover:translate-x-1 transition-transform">→</span></a>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="bg-white p-6 rounded-2xl border border-neutral-100 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between group animate-reveal">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-5 group-hover:bg-brand-500 group-hover:text-white transition-colors">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+                            </div>
+                            <h3 class="font-heading text-lg font-bold text-neutral-900 mb-2">Limpeza e Prevenção</h3>
+                            <p class="text-neutral-600 text-sm leading-relaxed mb-4">Profilaxia completa, remoção de tártaro e orientação preventiva para manter a saúde bucal em dia.</p>
+                        </div>
+                        <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20Limpeza%20e%20Preven%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-brand-600 hover:text-brand-700 inline-flex items-center gap-1">Saiba mais <span class="group-hover:translate-x-1 transition-transform">→</span></a>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="bg-white p-6 rounded-2xl border border-neutral-100 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between group animate-reveal">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-5 group-hover:bg-brand-500 group-hover:text-white transition-colors">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                            </div>
+                            <h3 class="font-heading text-lg font-bold text-neutral-900 mb-2">Tratamento de Canal</h3>
+                            <p class="text-neutral-600 text-sm leading-relaxed mb-4">Endodontia computadorizada e indolor para preservar o dente natural e aliviar desconfortos.</p>
+                        </div>
+                        <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20Tratamento%20de%20Canal." target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-brand-600 hover:text-brand-700 inline-flex items-center gap-1">Saiba mais <span class="group-hover:translate-x-1 transition-transform">→</span></a>
+                    </div>
+
+                    <!-- Card 8 -->
+                    <div class="bg-white p-6 rounded-2xl border border-neutral-100 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between group animate-reveal">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-5 group-hover:bg-brand-500 group-hover:text-white transition-colors">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                            </div>
+                            <h3 class="font-heading text-lg font-bold text-neutral-900 mb-2">Odontopediatria</h3>
+                            <p class="text-neutral-600 text-sm leading-relaxed mb-4">Cuidado lúdico e atencioso especialmente adaptado para o bem-estar e saúde bucal das crianças.</p>
+                        </div>
+                        <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20Odontopediatria." target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-brand-600 hover:text-brand-700 inline-flex items-center gap-1">Saiba mais <span class="group-hover:translate-x-1 transition-transform">→</span></a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Por Que Escolher -->
+        <section id="sobre" class="py-20 lg:py-28 bg-white overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                    
+                    <div class="lg:col-span-6 relative animate-reveal">
+                        <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-neutral-50 relative">
+                            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=900" 
+                                 alt="Dentista conversando com paciente em consultório acolhedor" 
+                                 width="900" 
+                                 height="600" 
+                                 loading="lazy"
+                                 class="w-full h-[450px] object-cover">
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-6 space-y-6 animate-reveal">
+                        <h2 class="font-heading text-3xl sm:text-4xl font-bold text-neutral-900 tracking-tight leading-tight">
+                            Mais do que tratar dentes. Cuidamos de pessoas.
+                        </h2>
+                        <p class="text-neutral-600 text-base leading-relaxed">
+                            Acreditamos que uma boa experiência odontológica começa com a escuta atenta e o respeito ao tempo e às expectativas de cada indivíduo.
+                        </p>
+
+                        <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                            <div class="flex items-start gap-3 p-3 rounded-xl bg-neutral-50">
+                                <div class="w-6 h-6 rounded-full bg-brand-500/10 text-brand-600 flex items-center justify-center flex-shrink-0 mt-0.5">✓</div>
+                                <div>
+                                    <h3 class="font-bold text-neutral-900 text-sm">Atendimento humanizado</h3>
+                                    <p class="text-xs text-neutral-600">Escuta ativa e foco no seu conforto absoluto.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3 p-3 rounded-xl bg-neutral-50">
+                                <div class="w-6 h-6 rounded-full bg-brand-500/10 text-brand-600 flex items-center justify-center flex-shrink-0 mt-0.5">✓</div>
+                                <div>
+                                    <h3 class="font-bold text-neutral-900 text-sm">Profissionais qualificados</h3>
+                                    <p class="text-xs text-neutral-600">Equipe em atualização científica contínua.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3 p-3 rounded-xl bg-neutral-50">
+                                <div class="w-6 h-6 rounded-full bg-brand-500/10 text-brand-600 flex items-center justify-center flex-shrink-0 mt-0.5">✓</div>
+                                <div>
+                                    <h3 class="font-bold text-neutral-900 text-sm">Tecnologia moderna</h3>
+                                    <p class="text-xs text-neutral-600">Equipamentos de alta precisão e diagnóstico.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3 p-3 rounded-xl bg-neutral-50">
+                                <div class="w-6 h-6 rounded-full bg-brand-500/10 text-brand-600 flex items-center justify-center flex-shrink-0 mt-0.5">✓</div>
+                                <div>
+                                    <h3 class="font-bold text-neutral-900 text-sm">Transparência total</h3>
+                                    <p class="text-xs text-neutral-600">Clareza em etapas, opções e orçamentos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Profissional (Destaque) -->
+        <section class="py-20 lg:py-28 bg-neutral-900 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-12 gap-12 items-center">
+                    
+                    <div class="lg:col-span-5 animate-reveal">
+                        <div class="relative rounded-3xl overflow-hidden border-2 border-neutral-700 bg-neutral-800">
+                            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=800" 
+                                 alt="Dr. Rafael Almeida - Cirurgião-Dentista fictício" 
+                                 width="800" 
+                                 height="900" 
+                                 loading="lazy"
+                                 class="w-full h-[480px] object-cover object-top">
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-7 space-y-6 animate-reveal">
+                        <span class="text-xs font-semibold uppercase tracking-widest text-brand-500">Apresentação Técnica</span>
+                        <h2 class="font-heading text-3xl sm:text-4xl font-bold tracking-tight">Conheça quem cuida do seu sorriso</h2>
+                        
+                        <div class="space-y-2">
+                            <h3 class="text-2xl font-bold text-white">Dr. Rafael Almeida</h3>
+                            <p class="text-brand-500 font-medium text-sm">Cirurgião-Dentista | Perfil Demonstrativo</p>
+                        </div>
+
+                        <p class="text-neutral-300 leading-relaxed">
+                            "Com uma abordagem baseada em cuidado, precisão e atualização constante, o Dr. Rafael Almeida atua buscando proporcionar uma experiência odontológica mais tranquila, moderna e personalizada."
+                        </p>
+
+                        <div class="grid sm:grid-cols-2 gap-3 pt-2 text-sm text-neutral-300">
+                            <div class="flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-brand-500"></span>
+                                Especialista em Reabilitação Oral
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-brand-500"></span>
+                                Odontologia Estética & Digital
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-brand-500"></span>
+                                Foco em Pacientes com Ansiedade
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-brand-500"></span>
+                                Planejamento Virtual Guiado
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-neutral-800">
+                            <p class="text-[11px] text-neutral-500 italic">
+                                *Nota de demonstração: Profissional fictício criado exclusivamente para apresentação conceitual do projeto web.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Galeria Antes e Depois -->
+        <section id="resultados" class="py-20 lg:py-28 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16 animate-reveal">
+                    <h2 class="font-heading text-3xl sm:text-4xl font-bold text-neutral-900 tracking-tight">Resultados que falam por si</h2>
+                    <p class="text-neutral-600 mt-4 text-base">
+                        Exemplos ilustrativos de harmonização, alinhamento e tratamentos restauradores.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <!-- Card Antes/Depois 1 -->
+                    <div class="bg-neutral-50 rounded-2xl overflow-hidden border border-neutral-100 shadow-sm animate-reveal">
+                        <div class="grid grid-cols-2 gap-0.5 bg-neutral-200">
+                            <div class="relative">
+                                <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=400" alt="Antes - Clareamento" class="w-full h-44 object-cover filter grayscale contrast-125">
+                                <span class="absolute bottom-2 left-2 bg-neutral-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">ANTES</span>
+                            </div>
+                            <div class="relative">
+                                <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=400" alt="Depois - Clareamento" class="w-full h-44 object-cover">
+                                <span class="absolute bottom-2 right-2 bg-brand-600 text-white text-[10px] font-bold px-2 py-0.5 rounded">DEPOIS</span>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-brand-600">Clareamento Laser</span>
+                            <h3 class="font-bold text-neutral-900 mt-1">Remoção de Manchas e Iluminação</h3>
+                            <p class="text-xs text-neutral-500 mt-1">Exemplo demonstrativo de clareamento contínuo.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card Antes/Depois 2 -->
+                    <div class="bg-neutral-50 rounded-2xl overflow-hidden border border-neutral-100 shadow-sm animate-reveal">
+                        <div class="grid grid-cols-2 gap-0.5 bg-neutral-200">
+                            <div class="relative">
+                                <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=400" alt="Antes - Lentes" class="w-full h-44 object-cover filter contrast-125">
+                                <span class="absolute bottom-2 left-2 bg-neutral-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">ANTES</span>
+                            </div>
+                            <div class="relative">
+                                <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=400" alt="Depois - Lentes" class="w-full h-44 object-cover">
+                                <span class="absolute bottom-2 right-2 bg-brand-600 text-white text-[10px] font-bold px-2 py-0.5 rounded">DEPOIS</span>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-brand-600">Lentes de Contato</span>
+                            <h3 class="font-bold text-neutral-900 mt-1">Harmonização do Sorriso</h3>
+                            <p class="text-xs text-neutral-500 mt-1">Exemplo demonstrativo estético.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card Antes/Depois 3 -->
+                    <div class="bg-neutral-50 rounded-2xl overflow-hidden border border-neutral-100 shadow-sm animate-reveal">
+                        <div class="grid grid-cols-2 gap-0.5 bg-neutral-200">
+                            <div class="relative">
+                                <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&q=80&w=400" alt="Antes - Ortodontia" class="w-full h-44 object-cover filter contrast-125">
+                                <span class="absolute bottom-2 left-2 bg-neutral-900/80 text-white text-[10px] font-bold px-2 py-0.5 rounded">ANTES</span>
+                            </div>
+                            <div class="relative">
+                                <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&q=80&w=400" alt="Depois - Ortodontia" class="w-full h-44 object-cover">
+                                <span class="absolute bottom-2 right-2 bg-brand-600 text-white text-[10px] font-bold px-2 py-0.5 rounded">DEPOIS</span>
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-brand-600">Alinhador Invisível</span>
+                            <h3 class="font-bold text-neutral-900 mt-1">Correção e Alinhamento</h3>
+                            <p class="text-xs text-neutral-500 mt-1">Exemplo demonstrativo ortodôntico.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text-center mt-10">
+                    <p class="text-xs text-neutral-400 italic">
+                        Imagens meramente ilustrativas e demonstrativas. Os resultados reais podem variar substancialmente de acordo com as características biológicas e adesão ao tratamento de cada paciente.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Depoimentos -->
+        <section id="depoimentos" class="py-20 lg:py-28 bg-neutral-50/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16 animate-reveal">
+                    <h2 class="font-heading text-3xl sm:text-4xl font-bold text-neutral-900 tracking-tight">Quem passa por aqui, recomenda</h2>
+                    <p class="text-neutral-600 mt-4 text-base">
+                        Depoimentos simulados de pacientes demonstrativos para exemplificação de experiência.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <div class="bg-white p-8 rounded-2xl border border-neutral-100 shadow-sm flex flex-col justify-between animate-reveal">
+                        <div class="space-y-4">
+                            <div class="flex text-amber-400 gap-1">
+                                ★★★★★
+                            </div>
+                            <p class="text-neutral-600 text-sm leading-relaxed italic">
+                                "Desde o primeiro atendimento me senti muito mais tranquila. A equipe explicou cada etapa com muita clareza e o resultado final do meu tratamento superou o que eu esperava."
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-neutral-100">
+                            <p class="font-bold text-neutral-900 text-sm">Mariana S.</p>
+                            <p class="text-xs text-neutral-400">Paciente Demonstrativa</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-2xl border border-neutral-100 shadow-sm flex flex-col justify-between animate-reveal">
+                        <div class="space-y-4">
+                            <div class="flex text-amber-400 gap-1">
+                                ★★★★★
+                            </div>
+                            <p class="text-neutral-600 text-sm leading-relaxed italic">
+                                "Ambiente extremamente moderno, atendimento atencioso e pontual. O acompanhamento digital fez toda a diferença no meu alinhamento."
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-neutral-100">
+                            <p class="font-bold text-neutral-900 text-sm">Lucas R.</p>
+                            <p class="text-xs text-neutral-400">Paciente Demonstrativo</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-2xl border border-neutral-100 shadow-sm flex flex-col justify-between animate-reveal">
+                        <div class="space-y-4">
+                            <div class="flex text-amber-400 gap-1">
+                                ★★★★★
+                            </div>
+                            <p class="text-neutral-600 text-sm leading-relaxed italic">
+                                "Gostei principalmente da transparência na explicação de todas as opções antes de iniciar qualquer procedimento. Recomendo de olhos fechados."
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-neutral-100">
+                            <p class="font-bold text-neutral-900 text-sm">Camila M.</p>
+                            <p class="text-xs text-neutral-400">Paciente Demonstrativa</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Galeria da Clínica com Lightbox -->
+        <section id="clinica" class="py-20 lg:py-28 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16 animate-reveal">
+                    <h2 class="font-heading text-3xl sm:text-4xl font-bold text-neutral-900 tracking-tight">Nossa Estrutura</h2>
+                    <p class="text-neutral-600 mt-4 text-base">
+                        Ambientes planejados para oferecer máximo conforto, biossegurança e tranquilidade.
+                    </p>
+                </div>
+
+                <!-- Grid Assimétrico -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="col-span-2 row-span-2 relative group overflow-hidden rounded-2xl cursor-pointer shadow-md" onclick="openLightbox('https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=1200', 'Recepção Moderna')">
+                        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=800" alt="Recepção da clínica" class="w-full h-full min-h-[300px] object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-neutral-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-medium text-sm">Clique para ampliar</div>
+                    </div>
+
+                    <div class="relative group overflow-hidden rounded-2xl cursor-pointer shadow-md" onclick="openLightbox('https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=1200', 'Consultório Principal')">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=600" alt="Consultório" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-neutral-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-medium text-xs">Ampliar</div>
+                    </div>
+
+                    <div class="relative group overflow-hidden rounded-2xl cursor-pointer shadow-md" onclick="openLightbox('https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=1200', 'Equipamentos Odontológicos')">
+                        <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=600" alt="Cadeira odontológica" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-neutral-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-medium text-xs">Ampliar</div>
+                    </div>
+
+                    <div class="relative group overflow-hidden rounded-2xl cursor-pointer shadow-md" onclick="openLightbox('https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&q=80&w=1200', 'Atendimento Humanizado')">
+                        <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&q=80&w=600" alt="Sala de exames" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-neutral-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-medium text-xs">Ampliar</div>
+                    </div>
+
+                    <div class="relative group overflow-hidden rounded-2xl cursor-pointer shadow-md" onclick="openLightbox('https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=1200', 'Espaço de Avaliação')">
+                        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=600" alt="Área clínica" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-neutral-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-medium text-xs">Ampliar</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox" class="fixed inset-0 bg-black/90 z-50 hidden flex-col items-center justify-center p-4">
+            <button onclick="closeLightbox()" aria-label="Fechar galeria" class="absolute top-6 right-6 text-white hover:text-brand-500 p-2">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+            <img id="lightbox-img" src="" alt="" class="max-w-full max-h-[80vh] rounded-lg shadow-2xl object-contain">
+            <p id="lightbox-caption" class="text-white text-sm mt-4 font-medium"></p>
+        </div>
+
+        <!-- Tecnologia -->
+        <section class="py-20 lg:py-28 bg-neutral-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16 animate-reveal">
+                    <h2 class="font-heading text-3xl sm:text-4xl font-bold text-neutral-900 tracking-tight">Tecnologia para cuidar melhor</h2>
+                    <p class="text-neutral-600 mt-4 text-base">
+                        Recursos modernos integrados para diagnósticos rápidos, precisos e procedimentos mais confortáveis.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="bg-white p-6 rounded-2xl border border-neutral-100 text-center animate-reveal">
+                        <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 mx-auto flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        </div>
+                        <h3 class="font-bold text-neutral-900 mb-1">Diagnóstico Digital</h3>
+                        <p class="text-xs text-neutral-600">Imagens em alta definição para avaliações precisas.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl border border-neutral-100 text-center animate-reveal">
+                        <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 mx-auto flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 0120 12h-9V3.055z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"/></svg>
+                        </div>
+                        <h3 class="font-bold text-neutral-900 mb-1">Planejamento 3D</h3>
+                        <p class="text-xs text-neutral-600">Simulações virtuais antes do início do procedimento.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl border border-neutral-100 text-center animate-reveal">
+                        <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 mx-auto flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                        </div>
+                        <h3 class="font-bold text-neutral-900 mb-1">Equipamentos Mínimo-Invasivos</h3>
+                        <p class="text-xs text-neutral-600">Procedimentos mais rápidos e cicatrização eficiente.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl border border-neutral-100 text-center animate-reveal">
+                        <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 mx-auto flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <h3 class="font-bold text-neutral-900 mb-1">Conforto Acústico e Visual</h3>
+                        <p class="text-xs text-neutral-600">Ambiente projetado para mitigar o estresse e ansiedade.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FAQ Accordion -->
+        <section class="py-20 lg:py-28 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center mb-16 animate-reveal">
+                    <h2 class="font-heading text-3xl sm:text-4xl font-bold text-neutral-900 tracking-tight">Perguntas Frequentes</h2>
+                    <p class="text-neutral-600 mt-4 text-base">Esclareça suas dúvidas sobre nossos processos de avaliação e atendimento.</p>
+                </div>
+
+                <div class="space-y-4 animate-reveal">
+                    
+                    <!-- Item 1 -->
+                    <div class="border border-neutral-200 rounded-2xl overflow-hidden">
+                        <button onclick="toggleFaq(this)" aria-expanded="false" class="w-full flex justify-between items-center p-5 text-left font-bold text-neutral-900 hover:bg-neutral-50 transition-colors">
+                            <span>Como funciona a primeira avaliação?</span>
+                            <span class="faq-icon text-brand-600 font-normal text-xl">+</span>
+                        </button>
+                        <div class="faq-answer hidden px-5 pb-5 text-sm text-neutral-600 leading-relaxed border-t border-neutral-100 pt-3">
+                            Na primeira avaliação é realizado um exame clínico detalhado, levantamento do histórico e conversa para compreender suas metas. Se necessário, são solicitados ou realizados exames digitais suplementares para elaboração do plano personalizado.
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="border border-neutral-200 rounded-2xl overflow-hidden">
+                        <button onclick="toggleFaq(this)" aria-expanded="false" class="w-full flex justify-between items-center p-5 text-left font-bold text-neutral-900 hover:bg-neutral-50 transition-colors">
+                            <span>Quais formas de pagamento são aceitas?</span>
+                            <span class="faq-icon text-brand-600 font-normal text-xl">+</span>
+                        </button>
+                        <div class="faq-answer hidden px-5 pb-5 text-sm text-neutral-600 leading-relaxed border-t border-neutral-100 pt-3">
+                            Aceitamos cartões de crédito (parcelamento flexível), débito, PIX e transferências bancárias. Todas as condições são apresentadas com clareza antes do início de qualquer etapa.
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="border border-neutral-200 rounded-2xl overflow-hidden">
+                        <button onclick="toggleFaq(this)" aria-expanded="false" class="w-full flex justify-between items-center p-5 text-left font-bold text-neutral-900 hover:bg-neutral-50 transition-colors">
+                            <span>Quanto tempo dura um tratamento?</span>
+                            <span class="faq-icon text-brand-600 font-normal text-xl">+</span>
+                        </button>
+                        <div class="faq-answer hidden px-5 pb-5 text-sm text-neutral-600 leading-relaxed border-t border-neutral-100 pt-3">
+                            A duração varia amplamente de acordo com a complexidade do caso. Tratamentos estéticos como clareamentos podem durar poucas semanas, enquanto alinhamentos orais complexos exigem meses de acompanhamento.
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="border border-neutral-200 rounded-2xl overflow-hidden">
+                        <button onclick="toggleFaq(this)" aria-expanded="false" class="w-full flex justify-between items-center p-5 text-left font-bold text-neutral-900 hover:bg-neutral-50 transition-colors">
+                            <span>Vocês atendem crianças?</span>
+                            <span class="faq-icon text-brand-600 font-normal text-xl">+</span>
+                        </button>
+                        <div class="faq-answer hidden px-5 pb-5 text-sm text-neutral-600 leading-relaxed border-t border-neutral-100 pt-3">
+                            Sim. Nossa equipe conta com área focada em Odontopediatria para acolher crianças com linguagem adaptada e ambiente seguro.
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="border border-neutral-200 rounded-2xl overflow-hidden">
+                        <button onclick="toggleFaq(this)" aria-expanded="false" class="w-full flex justify-between items-center p-5 text-left font-bold text-neutral-900 hover:bg-neutral-50 transition-colors">
+                            <span>É possível realizar uma avaliação antes de decidir pelo tratamento?</span>
+                            <span class="faq-icon text-brand-600 font-normal text-xl">+</span>
+                        </button>
+                        <div class="faq-answer hidden px-5 pb-5 text-sm text-neutral-600 leading-relaxed border-t border-neutral-100 pt-3">
+                            Com certeza. A avaliação inicial serve justamente para lhe fornecer todas as informações técnicas e orçamentárias de forma transparente para sua tomada de decisão consciente.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Final -->
+        <section class="py-20 bg-gradient-to-r from-brand-500 to-brand-600 text-white relative overflow-hidden">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 animate-reveal">
+                <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-4">
+                    Seu próximo sorriso começa com uma conversa.
+                </h2>
+                <p class="text-brand-100 text-lg max-w-2xl mx-auto mb-8">
+                    Agende uma avaliação e descubra quais opções integradas podem fazer sentido para suas metas de saúde e estética.
+                </p>
+                <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20odontol%C3%B3gica." 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="inline-flex items-center gap-3 bg-white text-brand-700 hover:bg-neutral-100 font-bold px-8 py-4 rounded-2xl shadow-2xl transition-all transform hover:-translate-y-0.5 active:translate-y-0">
+                    <svg class="w-6 h-6 text-emerald-600" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                    Agendar pelo WhatsApp
+                </a>
+            </div>
+        </section>
+
+        <!-- Seção de Contato -->
+        <section id="contato" class="py-20 lg:py-28 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-12 gap-12 items-center">
+                    
+                    <div class="lg:col-span-5 space-y-6 animate-reveal">
+                        <h2 class="font-heading text-3xl font-bold text-neutral-900 tracking-tight">Vamos conversar?</h2>
+                        <p class="text-neutral-600">Estamos à disposição para dúvidas, agendamentos e esclarecimentos.</p>
+
+                        <div class="space-y-4 pt-2 text-sm text-neutral-700">
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center flex-shrink-0 mt-0.5">📍</div>
+                                <div>
+                                    <strong class="block text-neutral-900">Endereço (Demonstrativo)</strong>
+                                    <span>Av. Exemplo, 1000 — São Paulo/SP</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center flex-shrink-0 mt-0.5">📞</div>
+                                <div>
+                                    <strong class="block text-neutral-900">Telefone & WhatsApp</strong>
+                                    <span>(11) 99999-9999</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center flex-shrink-0 mt-0.5">✉️</div>
+                                <div>
+                                    <strong class="block text-neutral-900">E-mail</strong>
+                                    <span>contato@oralvitta.com.br</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center flex-shrink-0 mt-0.5">🕐</div>
+                                <div>
+                                    <strong class="block text-neutral-900">Horário de Atendimento</strong>
+                                    <span>Segunda a Sexta: 08h às 18h<br>Sábado: 08h às 12h</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mapa Visual Fictício -->
+                    <div class="lg:col-span-7 animate-reveal">
+                        <div class="w-full h-80 rounded-3xl bg-neutral-100 border border-neutral-200 overflow-hidden relative flex items-center justify-center">
+                            <div class="text-center p-6">
+                                <span class="text-3xl mb-2 block">🗺️</span>
+                                <p class="font-bold text-neutral-800 text-sm">Área Visual do Mapa Local</p>
+                                <p class="text-xs text-neutral-500 mt-1 max-w-xs">Representação gráfica fictícia para substituição por iframe do Google Maps em produção.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-900 text-white border-t border-neutral-800 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-neutral-800">
+                
+                <!-- Coluna 1: Marca -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2.5">
+                        <div class="w-8 h-8 rounded-lg bg-brand-500 text-white flex items-center justify-center">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <span class="font-heading font-bold text-lg text-white">OralVitta</span>
+                    </div>
+                    <p class="text-xs text-neutral-400 leading-relaxed">
+                        Clínica odontológica fictícia com foco em projetos conceituais de alta performance e elegância visual.
+                    </p>
+                </div>
+
+                <!-- Coluna 2: Links Rápidos -->
+                <div>
+                    <strong class="block text-sm font-bold text-white mb-4">Navegação</strong>
+                    <ul class="space-y-2 text-xs text-neutral-400">
+                        <li><a href="#inicio" class="hover:text-brand-500 transition-colors">Início</a></li>
+                        <li><a href="#tratamentos" class="hover:text-brand-500 transition-colors">Tratamentos</a></li>
+                        <li><a href="#sobre" class="hover:text-brand-500 transition-colors">Sobre Nós</a></li>
+                        <li><a href="#resultados" class="hover:text-brand-500 transition-colors">Resultados</a></li>
+                        <li><a href="#depoimentos" class="hover:text-brand-500 transition-colors">Depoimentos</a></li>
+                        <li><a href="#contato" class="hover:text-brand-500 transition-colors">Contato</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3: Tratamentos -->
+                <div>
+                    <strong class="block text-sm font-bold text-white mb-4">Especialidades</strong>
+                    <ul class="space-y-2 text-xs text-neutral-400">
+                        <li>Clareamento Dental</li>
+                        <li>Implantes Dentários</li>
+                        <li>Lentes de Contato</li>
+                        <li>Alinhadores Transparentes</li>
+                        <li>Odontopediatria</li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 4: Redes & Legal -->
+                <div>
+                    <strong class="block text-sm font-bold text-white mb-4">Redes Sociais</strong>
+                    <div class="flex gap-3 text-xs text-neutral-400 mb-4">
+                        <a href="#" class="w-8 h-8 rounded-full bg-neutral-800 flex items-center justify-center hover:bg-brand-500 hover:text-white transition-colors" aria-label="Instagram">IG</a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-neutral-800 flex items-center justify-center hover:bg-brand-500 hover:text-white transition-colors" aria-label="Facebook">FB</a>
+                    </div>
+                    <p class="text-[11px] text-neutral-500">
+                        © 2026 OralVitta Odontologia. Todos os direitos reservados.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Desenvolvedor Credito Discreto -->
+            <div class="pt-8 text-center text-xs text-neutral-500 flex flex-col sm:flex-row items-center justify-between gap-2">
+                <span>Projeto conceitual de demonstração comercial.</span>
+                <span class="text-neutral-400">Desenvolvido por <strong>Miguel Alves</strong></span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20odontol%C3%B3gica." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Falar pelo WhatsApp"
+       class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white p-3.5 rounded-full shadow-2xl transition-all transform hover:scale-110 active:scale-95 flex items-center justify-center">
+        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+    </a>
+
+    <!-- JavaScript Vanilla Moderno -->
+    <script>
+        // Menu Mobile Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const iconOpen = document.getElementById('menu-icon-open');
+        const iconClose = document.getElementById('menu-icon-close');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        btn.addEventListener('click', () => {
+            const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+            btn.setAttribute('aria-expanded', !isExpanded);
+            menu.classList.toggle('hidden');
+            iconOpen.classList.toggle('hidden');
+            iconClose.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                iconOpen.classList.remove('hidden');
+                iconClose.classList.add('hidden');
+                btn.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // FAQ Accordion Toggle
+        function toggleFaq(button) {
+            const answer = button.nextElementSibling;
+            const icon = button.querySelector('.faq-icon');
+            const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+            // Fechar outros
+            document.querySelectorAll('.faq-answer').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('.faq-icon').forEach(el => el.textContent = '+');
+            document.querySelectorAll('[aria-expanded]').forEach(el => el.setAttribute('aria-expanded', 'false'));
+
+            if (!isExpanded) {
+                answer.classList.remove('hidden');
+                icon.textContent = '−';
+                button.setAttribute('aria-expanded', 'true');
+            }
+        }
+
+        // Lightbox Handler
+        function openLightbox(src, caption) {
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            const cap = document.getElementById('lightbox-caption');
+
+            img.src = src;
+            cap.textContent = caption;
+            lightbox.classList.remove('hidden');
+            lightbox.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.add('hidden');
+            lightbox.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Fechar lightbox ao pressionar ESC
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+
+        // Intersection Observer para Animações Reveal
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
